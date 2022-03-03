@@ -11,7 +11,7 @@ class AsyncOperation: Operation {
     enum State: String {
         case ready, executing, finished
         
-        fileprivate  var keyPath: String {
+        fileprivate var keyPath: String {
             return "is\(rawValue.capitalized)"
         }
     }
